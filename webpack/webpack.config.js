@@ -4,6 +4,7 @@ module.exports = {
   entry: ["./src/index.js", "./src/bar.js"],
   output: {
     filename: "[name].[contenthash].bundle.js",
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
